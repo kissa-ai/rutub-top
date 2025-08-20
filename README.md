@@ -122,7 +122,7 @@ document.getElementById('fetchSubs').addEventListener('click', async () => {
     // Ищем подписчиков
     const subsElement = doc.querySelector('.video-channel-subscribers-count') || 
                        doc.querySelector('.metadata-subscribers');
-    const subsText = subsElement ? subsElement.textContent.trim() : 'Не найдено';
+    const subsText = subsElement ? subsElement.textContent.trim() : 'Не найдено'; 
     
     resultDiv.textContent = \\Подписчики: \\${subsText}\\;
   } catch (error) {
